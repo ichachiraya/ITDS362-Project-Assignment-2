@@ -5,7 +5,7 @@
   "url": "http://10.34.112.158:8000/dk/store",
   "tests": [{
     "id": "5aba985a-ea8e-40b2-b42f-3b0c0664256e",
-    "name": "2. User : Buy Prod.",
+    "name": "1. User : Buy Prod.",
     "commands": [{
       "id": "c2308884-e788-486f-bb46-68fe9b3c7c1d",
       "comment": "",
@@ -31,7 +31,7 @@
       "id": "e674e262-d4ac-44b3-b3ab-0715483d039b",
       "comment": "",
       "command": "click",
-      "target": "css=li:nth-child(2) .absolute",
+      "target": "css=li:nth-child(1) .absolute",
       "targets": [
         ["css=li:nth-child(7) .absolute", "css:finder"],
         ["xpath=(//img[@alt='Thumbnail'])[2]", "xpath:img"],
@@ -446,50 +446,6 @@
       ],
       "value": ""
     }, {
-      "id": "7d079144-0375-4e98-8400-81fb633c2f6c",
-      "comment": "",
-      "command": "click",
-      "target": "css=#headlessui-radio-_r_c_ > .flex",
-      "targets": [
-        ["css=#headlessui-radio-_r_c_ > .flex", "css:finder"],
-        ["xpath=//span[@id='headlessui-radio-_r_c_']/div", "xpath:idRelative"],
-        ["xpath=//span/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "14c5f555-8aaa-4d2d-be22-8ebdc1fac534",
-      "comment": "",
-      "command": "click",
-      "target": "css=.h-5",
-      "targets": [
-        ["css=.h-5", "css:finder"],
-        ["xpath=//button[@type='button']", "xpath:attributes"],
-        ["xpath=//span[@id='headlessui-radio-_r_c_']/div/div/button", "xpath:idRelative"],
-        ["xpath=//div/button", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "3cbe9956-48e0-44e5-8eda-212d882991cf",
-      "comment": "",
-      "command": "click",
-      "target": "css=.text-base-regular:nth-child(2)",
-      "targets": [
-        ["css=.text-base-regular:nth-child(2)", "css:finder"],
-        ["xpath=//span[@id='headlessui-radio-_r_c_']/div/div/p", "xpath:idRelative"],
-        ["xpath=//span/div/div/p", "xpath:position"],
-        ["xpath=//p[contains(.,'Manual Payment')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "a287396e-3a36-48d4-a0b1-fa83b0bc380c",
-      "comment": "",
-      "command": "click",
-      "target": "css=.justify-self-end > svg",
-      "targets": [
-        ["css=.justify-self-end > svg", "css:finder"]
-      ],
-      "value": ""
-    }, {
       "id": "af02aacf-0670-426a-9333-fef6690c618e",
       "comment": "",
       "command": "click",
@@ -510,7 +466,7 @@
     }]
   }, {
     "id": "322fd95c-df39-46b7-b385-2256bd7708ed",
-    "name": "3.Admin : Fulfilment",
+    "name": "2.Admin : Fulfilment",
     "commands": [{
       "id": "0fea2d3c-1032-4ff7-b6e2-56340243bf68",
       "comment": "",
@@ -584,7 +540,7 @@
       "id": "6f5d8d98-5e76-44d8-ba04-adf485bd90b2",
       "comment": "",
       "command": "click",
-      "target": "xpath=//table//tbody/tr[1]//a[1]",
+      "target": "xpath=//table//tbody/tr[1]//a",
       "targets": [
         ["css=.bg-ui-bg-base:nth-child(1) > .h-12:nth-child(3) .flex > .flex", "css:finder"],
         ["xpath=//div[@id='medusa']/div/div/div[3]/main/div/div/div/div[2]/div[2]/div/table/tbody/tr/td[3]/a/div/div", "xpath:idRelative"],
@@ -594,35 +550,35 @@
     }, {
       "id": "5e414a76-cefd-47d5-8798-7a4489b47685",
       "comment": "",
-      "command": "//click",
+      "command": "click",
       "target": "css=.disabled\\3A border-ui-border-base",
       "targets": [],
       "value": ""
     }, {
       "id": "8bf901c7-4f6d-418f-9ca5-32db1e1a78df",
       "comment": "",
-      "command": "//click",
+      "command": "click",
       "target": "xpath=//button[.//span[text()='Capture payment']]",
       "targets": [],
       "value": ""
     }, {
       "id": "a97c04bd-4626-405a-9f02-bead23701381",
       "comment": "",
-      "command": "//click",
+      "command": "click",
       "target": "css=html",
       "targets": [],
       "value": ""
     }, {
       "id": "88a13bb3-0ea0-4154-a88e-18014a28a45d",
       "comment": "",
-      "command": "//click",
+      "command": "click",
       "target": "xpath=//button[normalize-space(.)='Confirm']",
       "targets": [],
       "value": ""
     }, {
       "id": "53b1b95e-a077-432f-8a65-5f2b56583acd",
       "comment": "",
-      "command": "//click",
+      "command": "click",
       "target": "xpath=//div[4]/div/div/div/button",
       "targets": [],
       "value": ""
@@ -707,10 +663,6 @@
       ],
       "value": ""
     }]
-  }, {
-    "id": "4fc14454-aad9-4383-9250-c6e07de53bb1",
-    "name": "1. Admin : Add Product",
-    "commands": []
   }],
   "suites": [{
     "id": "ff63f274-92bd-4f89-bbec-73b742393394",
