@@ -10,7 +10,7 @@
       "id": "109e3a72-c396-47e8-b2a1-30785ed48ce3",
       "comment": "",
       "command": "open",
-      "target": "http://43.228.85.98:9000/app/login",
+      "target": "http://10.34.112.158:9000/app/login",
       "targets": [],
       "value": ""
     }, {
@@ -61,7 +61,7 @@
         ["xpath=//div[@id='medusa']/div/div/div/div[3]/form/div/div/div/input", "xpath:idRelative"],
         ["xpath=//input", "xpath:position"]
       ],
-      "value": "admin@medusa-test.com"
+      "value": "group9@mu-store.local"
     }, {
       "id": "4bb0b78f-3177-4c3b-8dfd-a41e17eeda5d",
       "comment": "",
@@ -89,7 +89,7 @@
         ["xpath=//div[@id='medusa']/div/div/div/div[3]/form/div/div[2]/div[2]/input", "xpath:idRelative"],
         ["xpath=//div[2]/input", "xpath:position"]
       ],
-      "value": "supersecret"
+      "value": "Hp5@jcF2"
     }, {
       "id": "1fc0e4f2-f951-4522-835d-ee44324be777",
       "comment": "continue to email",
@@ -214,7 +214,7 @@
       "id": "b0b4fbd5-4588-413d-89ff-3427327f70f6",
       "comment": "",
       "command": "click",
-      "target": "xpath=//tr[.//td[normalize-space()='China']]//button[@role='checkbox']",
+      "target": "xpath=//tr[.//td[normalize-space()='Central African Republic']]//button[@role='checkbox']",
       "targets": [
         ["css=.border-ui-border-base:nth-child(2) > .bg-ui-bg-base:nth-child(1) > .h-12 .text-ui-fg-on-inverted", "css:finder"],
         ["xpath=//div[@id='radix-:r45:']/div/div[2]/div/div[2]/div/table/tbody/tr/td/button/div", "xpath:idRelative"],
@@ -326,13 +326,6 @@
       "comment": "",
       "command": "click",
       "target": "linkText=Locations & Shipping",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "db796cdc-ab10-4473-a701-2b1a4f9622ad",
-      "comment": "",
-      "command": "//open",
-      "target": "http://43.228.85.98:9000/app/settings/locations",
       "targets": [],
       "value": ""
     }, {
@@ -494,27 +487,21 @@
     }, {
       "id": "1eab0310-9fb8-4519-8920-afac75be1f99",
       "comment": "",
-      "command": "click",
-      "target": "css=.data-\\[placeholder\\]\\3Atext-ui-fg-muted",
-      "targets": [
-        ["css=.data-\\[placeholder\\]\\3Atext-ui-fg-muted", "css:finder"],
-        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
-        ["xpath=//div[@id='radix-:r47l:']/form/div[2]/div/div/div[3]/div[5]/div[2]/button", "xpath:idRelative"],
-        ["xpath=//div[5]/div[2]/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Select country')]", "xpath:innerText"]
-      ],
-      "value": ""
+      "command": "select",
+      "target": "name=address.country_code",
+      "targets": [],
+      "value": "label=China"
     }, {
       "id": "7d53c8a6-fe8c-45d9-bde1-104ca6980ddf",
       "comment": "",
-      "command": "waitForElementVisible",
+      "command": "//waitForElementVisible",
       "target": "xpath=//div[@role='option' and normalize-space()='China']",
       "targets": [],
       "value": "30000"
     }, {
       "id": "ac73160d-d563-471b-8107-5b46a489a5cd",
       "comment": "",
-      "command": "click",
+      "command": "//click",
       "target": "xpath=//div[@role='option' and normalize-space()='China']",
       "targets": [],
       "value": ""
@@ -777,6 +764,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "7ee8c4f6-6c6b-4c45-8f45-2654ace46983",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//button[normalize-space()='Connect Providers']",
+      "targets": [],
+      "value": "30000"
+    }, {
       "id": "f88d56b0-071d-4759-af97-53f81f3a7cea",
       "comment": "",
       "command": "click",
@@ -948,15 +942,9 @@
     }, {
       "id": "d88cd17a-4cfc-4937-9ed8-84b246a64a24",
       "comment": "",
-      "command": "doubleClick",
+      "command": "//doubleClick",
       "target": "css=input[data-cell-id=\"0:1\"]",
-      "targets": [
-        ["name=currency_prices.thb", "name"],
-        ["css=.relative:nth-child(2) > .relative .txt-compact-small:nth-child(2)", "css:finder"],
-        ["xpath=//input[@name='currency_prices.thb']", "xpath:attributes"],
-        ["xpath=//div[@id='radix-:r7r:-content-pricing']/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "f1ca4fe3-d832-4710-a063-492657332792",
@@ -972,15 +960,9 @@
     }, {
       "id": "d7db342a-da0a-470d-929e-661496ea4ba2",
       "comment": "",
-      "command": "doubleClick",
+      "command": "//doubleClick",
       "target": "css=input[data-cell-id=\"0:2\"]",
-      "targets": [
-        ["name=currency_prices.thb", "name"],
-        ["css=.relative:nth-child(2) > .relative .txt-compact-small:nth-child(2)", "css:finder"],
-        ["xpath=//input[@name='currency_prices.thb']", "xpath:attributes"],
-        ["xpath=//div[@id='radix-:r7r:-content-pricing']/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "adfbb7d0-f4b1-488f-a793-d6798d3621fb",
@@ -996,15 +978,9 @@
     }, {
       "id": "a782a2ed-7951-4b7d-83fa-8f49411b3750",
       "comment": "",
-      "command": "doubleClick",
+      "command": "//doubleClick",
       "target": "css=input[data-cell-id=\"0:3\"]",
-      "targets": [
-        ["name=currency_prices.thb", "name"],
-        ["css=.relative:nth-child(2) > .relative .txt-compact-small:nth-child(2)", "css:finder"],
-        ["xpath=//input[@name='currency_prices.thb']", "xpath:attributes"],
-        ["xpath=//div[@id='radix-:r7r:-content-pricing']/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "0ae82b84-1ae8-4b07-b9db-b16ac3ad034d",
@@ -1020,15 +996,9 @@
     }, {
       "id": "11cf7f6e-b242-4386-95c9-115890f6daa8",
       "comment": "",
-      "command": "doubleClick",
+      "command": "//doubleClick",
       "target": "css=input[data-cell-id=\"0:4\"]",
-      "targets": [
-        ["name=currency_prices.thb", "name"],
-        ["css=.relative:nth-child(2) > .relative .txt-compact-small:nth-child(2)", "css:finder"],
-        ["xpath=//input[@name='currency_prices.thb']", "xpath:attributes"],
-        ["xpath=//div[@id='radix-:r7r:-content-pricing']/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "af40e2b8-eec5-4ef8-b3a1-fb5591518787",
@@ -1042,24 +1012,18 @@
       ],
       "value": "50"
     }, {
-      "id": "e5606cf4-e175-4ead-8970-a79d3eebda6a",
+      "id": "e46c81fd-4a30-484a-b6aa-28ee50d86f73",
       "comment": "",
       "command": "runScript",
-      "target": "document.querySelector('[role=\"application\"]').scrollTo(9999, 0);",
+      "target": "document.querySelector('[role=\"application\"]').scrollTo(99999, 0);",
       "targets": [],
       "value": ""
     }, {
       "id": "f0fe9247-5c17-4a59-9496-61277b09d558",
       "comment": "",
-      "command": "doubleClick",
+      "command": "//doubleClick",
       "target": "xpath=//div[@role='rowgroup']//div[@role='row'][1]//div[@role='gridcell'][@data-column-index=//div[@role='columnheader'][.//span[normalize-space()='Price TestGroup9-2']]/@data-column-index]//input",
-      "targets": [
-        ["name=currency_prices.thb", "name"],
-        ["css=.relative:nth-child(2) > .relative .txt-compact-small:nth-child(2)", "css:finder"],
-        ["xpath=//input[@name='currency_prices.thb']", "xpath:attributes"],
-        ["xpath=//div[@id='radix-:r7r:-content-pricing']/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "11338f71-0752-4363-b7d4-2f7b699d055c",
@@ -1189,39 +1153,34 @@
       "id": "43b761d6-36f1-42c1-be23-b41fb7b8d221",
       "comment": "",
       "command": "waitForElementVisible",
-      "target": "xpath=//button[@role='combobox' and .//span[normalize-space()='Select country']]",
+      "target": "name=country_code",
       "targets": [
-        ["css=.data-\\[placeholder\\]\\3Atext-ui-fg-muted", "css:finder"],
-        ["xpath=(//button[@type='button'])[28]", "xpath:attributes"],
-        ["xpath=//div[@id='radix-:r3db:']/form/div[2]/div/div/div[2]/div/div/div[2]/button", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div[2]/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Select country')]", "xpath:innerText"]
+        ["id=:rut:-form-item", "id"],
+        ["name=country_code", "name"],
+        ["css=#\\3Arut\\3A-form-item", "css:finder"],
+        ["xpath=//select[@id=':rut:-form-item']", "xpath:attributes"],
+        ["xpath=//div[@id='radix-:rup:']/form/div[2]/div/div/div[2]/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
       ],
       "value": "30000"
     }, {
       "id": "a2ee7e84-fa61-40b1-bd1d-085ea0398218",
       "comment": "",
-      "command": "click",
-      "target": "xpath=//button[@role='combobox' and .//span[normalize-space()='Select country']]",
+      "command": "select",
+      "target": "name=country_code",
       "targets": [],
-      "value": ""
+      "value": "label=China"
     }, {
       "id": "884d0990-eb8e-486a-9457-c5a193758a23",
       "comment": "",
-      "command": "waitForElementVisible",
+      "command": "//waitForElementVisible",
       "target": "xpath=//div[@role='option']//span[normalize-space()='China']",
-      "targets": [
-        ["css=.data-\\[placeholder\\]\\3Atext-ui-fg-muted", "css:finder"],
-        ["xpath=(//button[@type='button'])[28]", "xpath:attributes"],
-        ["xpath=//div[@id='radix-:r3db:']/form/div[2]/div/div/div[2]/div/div/div[2]/button", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div[2]/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Select country')]", "xpath:innerText"]
-      ],
+      "targets": [],
       "value": "30000"
     }, {
       "id": "fd2b9b25-07fb-43c3-8bd7-e2c1067a3afd",
       "comment": "",
-      "command": "click",
+      "command": "//click",
       "target": "xpath=//div[@role='option']//span[normalize-space()='China']",
       "targets": [],
       "value": ""
@@ -1401,7 +1360,7 @@
         ["xpath=(//div[@id='general']/div/div/div/div[2]/input)[3]", "xpath:idRelative"],
         ["xpath=//div[10]/form/div/div[2]/div/div/div/div[2]/div/div/div/div/div[2]/input", "xpath:position"]
       ],
-      "value": "TestProductGroup9-2"
+      "value": "TestProductGroup9-2-1"
     }, {
       "id": "2d319796-c391-47a3-96c7-cdc5d7d3c754",
       "comment": "",
@@ -1455,12 +1414,19 @@
       "id": "6dc54685-f019-439d-bcff-bdc3691a52cf",
       "comment": "",
       "command": "click",
-      "target": "css=.relative:nth-child(4) .text-ui-fg-on-inverted",
+      "target": "xpath=//div[4]/div/div/div/div/button/div",
       "targets": [
         ["css=.relative:nth-child(4) .text-ui-fg-on-inverted", "css:finder"],
-        ["xpath=//div[@id='radix-:r4s5:-content-variants']/div/div/div[2]/div/div/div[2]/div/div[4]/div/div/div/div/button/div", "xpath:idRelative"],
+        ["xpath=//div[@id='radix-:r4p9:-content-variants']/div/div/div[2]/div/div/div[2]/div/div[4]/div/div/div/div/button/div", "xpath:idRelative"],
         ["xpath=//div[4]/div/div/div/div/button/div", "xpath:position"]
       ],
+      "value": ""
+    }, {
+      "id": "bf4fe1eb-1df8-4761-b705-26ecc51b9312",
+      "comment": "",
+      "command": "runScript",
+      "target": "document.querySelector('[role=\"application\"]').scrollTo(500, 0);",
+      "targets": [],
       "value": ""
     }, {
       "id": "04e2f730-1a48-427c-a207-291b63ec8f36",
@@ -1469,6 +1435,13 @@
       "target": "css=input[data-cell-id=\"0:6\"]",
       "targets": [],
       "value": "100"
+    }, {
+      "id": "37ffec4a-71e8-4e2d-9f28-2195debbf5cf",
+      "comment": "",
+      "command": "runScript",
+      "target": "document.querySelector('[role=\"application\"]').scrollTo(500, 0);",
+      "targets": [],
+      "value": ""
     }, {
       "id": "75dbdd1c-505c-4fa9-859c-b2ca3bae3eae",
       "comment": "",
@@ -1483,10 +1456,10 @@
       ],
       "value": "100"
     }, {
-      "id": "e3ed9913-ac1a-4971-b3ba-a72a39c0bcd1",
+      "id": "bec36660-63d2-40b7-9834-f6bf94094c91",
       "comment": "",
       "command": "runScript",
-      "target": "document.querySelector('[role=\"application\"]').scrollTo(9999, 0);",
+      "target": "document.querySelector('[role=\"application\"]').scrollTo(500, 0);",
       "targets": [],
       "value": ""
     }, {
@@ -1503,6 +1476,13 @@
       ],
       "value": "100"
     }, {
+      "id": "299d54fa-5c3c-4300-ba34-4cd61a317d26",
+      "comment": "",
+      "command": "runScript",
+      "target": "document.querySelector('[role=\"application\"]').scrollTo(500, 0);",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "22985663-bc28-4586-9591-c2563d60b907",
       "comment": "",
       "command": "type",
@@ -1515,6 +1495,13 @@
         ["xpath=//div[9]/div/div/div/div/div/input", "xpath:position"]
       ],
       "value": "100"
+    }, {
+      "id": "e3ed9913-ac1a-4971-b3ba-a72a39c0bcd1",
+      "comment": "",
+      "command": "runScript",
+      "target": "document.querySelector('[role=\"application\"]').scrollTo(99999, 0);",
+      "targets": [],
+      "value": ""
     }, {
       "id": "e9abd5ee-060e-4cc5-86ca-7f0cea9703f4",
       "comment": "",
@@ -1562,65 +1549,69 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "27487da9-db49-4b17-a943-ba54fad4e6ae",
+      "id": "7bc99f75-8442-4d8c-bd50-2e321be67a03",
       "comment": "",
-      "command": "click",
-      "target": "css=.items-stretch:nth-child(2)",
+      "command": "waitForElementVisible",
+      "target": "xpath=//td[contains(.,'Default variant')]",
       "targets": [
-        ["css=.items-stretch:nth-child(2)", "css:finder"],
-        ["xpath=//div[@id='medusa']/div/div/div[3]/main/div/div/div/div/div/div[4]/div/div[2]/div/table/tbody/tr/td[2]", "xpath:idRelative"],
-        ["xpath=//td[2]", "xpath:position"],
+        ["css=.group-hover\\/row\\3A bg-ui-bg-base-hover", "css:finder"],
+        ["xpath=//div[@id='medusa']/div/div/div[3]/main/div/div/div/div/div/div[4]/div/div[2]/div/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
         ["xpath=//td[contains(.,'Default variant')]", "xpath:innerText"]
       ],
-      "value": ""
+      "value": "30000"
     }, {
-      "id": "7f790df6-9d8e-4810-b092-73bfa7acc3a5",
+      "id": "2d50d035-88d8-4d28-8141-f568038512ce",
       "comment": "",
       "command": "click",
-      "target": "css=.ps-6 > .flex",
+      "target": "xpath=//td[contains(.,'Default variant')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7de8480-ef45-41de-a7f1-2226d23f7f9c",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//a/div/div",
       "targets": [
-        ["css=.ps-6 > .flex", "css:finder"],
-        ["xpath=//div[@id='medusa']/div/div/div[3]/main/div/div/div/div/div/div[3]/div[2]/div/div/table/tbody/tr/td/a/div/div", "xpath:idRelative"],
+        ["css=.pl-6 > .flex", "css:finder"],
+        ["xpath=//div[@id='medusa']/div/div/div[3]/main/div/div/div/div/div/div[2]/div[2]/div/div/table/tbody/tr/td/a/div/div", "xpath:idRelative"],
         ["xpath=//a/div/div", "xpath:position"]
       ],
+      "value": "30000"
+    }, {
+      "id": "180c0253-f9fe-47f4-bc62-6ebe351026e2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a/div/div",
+      "targets": [],
       "value": ""
+    }, {
+      "id": "e3720c53-3599-4392-817b-cb8902243729",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=Manage locations",
+      "targets": [],
+      "value": "30000"
     }, {
       "id": "f68b029f-3627-4a66-bb29-716486343060",
       "comment": "",
       "command": "click",
       "target": "linkText=Manage locations",
-      "targets": [
-        ["linkText=Manage locations", "linkText"],
-        ["css=.flex:nth-child(1) > .flex > .shadow-elevation-card-rest:nth-child(2) > .flex > .transition-fg", "css:finder"],
-        ["xpath=//a[contains(text(),'Manage locations')]", "xpath:link"],
-        ["xpath=//div[@id='medusa']/div/div/div[3]/main/div/div/div/div/div/div[2]/div/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/app/inventory/iitem_01KAXQ3YGA6VC1JAWZGTF1G5RD/locations')]", "xpath:href"],
-        ["xpath=//div/div[2]/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Manage locations')]", "xpath:innerText"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "af518c54-68bc-4faa-916d-69652326b9ca",
       "comment": "",
       "command": "click",
       "target": "xpath=//p[normalize-space()='TestGroup9-2']/ancestor::div[contains(@class,'cursor-pointer')][1]//button[@role='checkbox']",
-      "targets": [
-        ["css=div:nth-child(5) .text-ui-fg-on-inverted", "css:finder"],
-        ["xpath=//div[@id='radix-:rcap:']/div[2]/div/div[4]/div/div[5]/div/div/button/div", "xpath:idRelative"],
-        ["xpath=//div[5]/div/div/button/div", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "31b67a4f-666c-4c5e-921f-a0cb93d5095c",
       "comment": "save mananged location",
       "command": "click",
       "target": "xpath=//button[contains(.,'Save')]",
-      "targets": [
-        ["css=.shadow-buttons-inverted", "css:finder"],
-        ["xpath=//div[@id='radix-:rcap:']/div[2]/div[2]/div/button[2]", "xpath:idRelative"],
-        ["xpath=//div[2]/div/button[2]", "xpath:position"],
-        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
-      ],
+      "targets": [],
       "value": ""
     }, {
       "id": "e0a50ac7-bff4-44d0-9587-0277bf9c58c8",
@@ -1637,12 +1628,26 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "ec90ffa9-eae7-4338-8180-9230839a2fe7",
+      "id": "4132b1bd-da59-4693-a732-cd5835f6e1a7",
       "comment": "",
       "command": "",
       "target": "",
       "targets": [],
       "value": ""
+    }, {
+      "id": "ec90ffa9-eae7-4338-8180-9230839a2fe7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.location.reload()",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22eb4b1b-d962-4935-b5c0-2dfc7ee29dce",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//td[5]/button",
+      "targets": [],
+      "value": "30000"
     }, {
       "id": "e4787ffd-f576-4b3f-b791-29f1310ebdbc",
       "comment": "",
@@ -1744,7 +1749,7 @@
       "id": "7cacfa1c-feaa-4a58-b0a9-8011927852e3",
       "comment": "",
       "command": "open",
-      "target": "http://43.228.85.98:8000/de/store",
+      "target": "http://10.34.112.158:8000/de/store",
       "targets": [],
       "value": ""
     }, {
@@ -2131,7 +2136,7 @@
       "id": "67268fd1-3655-4869-9554-d656d33f3d12",
       "comment": "select product",
       "command": "open",
-      "target": "http://43.228.85.98:8000/de/products/testproductgroup9-2",
+      "target": "http://10.34.112.158:8000/de/products/testproductgroup9-2",
       "targets": [],
       "value": ""
     }, {
@@ -2234,6 +2239,13 @@
         ["xpath=//button[contains(.,'Go to checkout')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "4c3d4198-edb9-4b7f-8c9c-78f14786fbd1",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "name=shipping_address.first_name",
+      "targets": [],
+      "value": "abcd"
     }, {
       "id": "6c3aab84-2bba-4faf-ac29-59ece09d83bf",
       "comment": "",
@@ -2399,9 +2411,9 @@
       "id": "a3efa078-b045-49cb-86be-c0d4abfa46cf",
       "comment": "",
       "command": "pause",
-      "target": "5000",
+      "target": "3000",
       "targets": [],
-      "value": "5000"
+      "value": "3000"
     }, {
       "id": "758327da-b525-4725-915b-c66e3dbdf848",
       "comment": "choose shipping method",
@@ -2458,9 +2470,9 @@
       "id": "01436a3e-1fef-4664-a047-1a15fcd83719",
       "comment": "",
       "command": "pause",
-      "target": "5000",
+      "target": "3000",
       "targets": [],
-      "value": "5000"
+      "value": "3000"
     }, {
       "id": "e586fe03-0924-4586-8c3e-02547c67f13b",
       "comment": "Continue Payment",
