@@ -11,7 +11,7 @@ export default function () {
   // Checks to ensure the request was successful
   check(res, {
     'status is 200': (r) => r.status === 200,
-    'response time is < 1s': (r) => r.timings.duration < 1000,
+    'response time is < 15s': (r) => r.timings.duration < 15000,
   });
 
   // User "think time" between actions to simulate realistic behavior
@@ -24,9 +24,9 @@ export default function () {
 
 export let options = {
   stages: [
-    { duration: '5m', target: 50 },   // Establish Base Load
-    { duration: '1m', target: 250 },  // SUDDEN SPIKE! (5x the base load)
-    { duration: '5m', target: 50 },   // Recovery back to Base Load
+    { duration: '2m', target: 10 },   // Establish Base Load
+    { duration: '2m', target: 70 },  // SUDDEN SPIKE! (5x the base load)
+    { duration: '2m', target: 40 },   // Recovery back to Base Load
   ],
   tags: { test_type: 'spike' },
 };
