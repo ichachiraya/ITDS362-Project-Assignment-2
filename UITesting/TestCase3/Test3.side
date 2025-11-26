@@ -62,28 +62,19 @@
       ],
       "value": ""
     }, {
-      "id": "7f389a34-9293-4a23-affe-2a6f64095f9a",
+      "id": "8c671977-7e01-474d-9a92-f77c01f40e74",
       "comment": "",
-      "command": "mouseOver",
-      "target": "css=.text-ui-fg-muted > .font-medium",
-      "targets": [
-        ["css=.text-ui-fg-muted > .font-medium", "css:finder"],
-        ["xpath=//div[@id='radix-:rv:']/div/ul/li[2]/div/a/p", "xpath:idRelative"],
-        ["xpath=//li[2]/div/a/p", "xpath:position"],
-        ["xpath=//p[contains(.,'Customer Groups')]", "xpath:innerText"]
-      ],
-      "value": ""
+      "command": "waitForElementVisible",
+      "target": "name=q",
+      "targets": [],
+      "value": "30000"
     }, {
       "id": "fe5de662-dba4-42f5-b1d5-3e955a2986fd",
       "comment": "",
-      "command": "click",
-      "target": "css=.bg-ui-bg-base:nth-child(2) > .h-12:nth-child(1) .flex > .flex",
-      "targets": [
-        ["css=.bg-ui-bg-base:nth-child(2) > .h-12:nth-child(1) .flex > .flex", "css:finder"],
-        ["xpath=//div[@id='medusa']/div/div/div[3]/main/div/div/div/div[2]/div[2]/div/table/tbody/tr[2]/td/a/div/div", "xpath:idRelative"],
-        ["xpath=//tr[2]/td/a/div/div", "xpath:position"]
-      ],
-      "value": ""
+      "command": "type",
+      "target": "name=q",
+      "targets": [],
+      "value": "aa@gmail.com"
     }, {
       "id": "c448df9b-403a-4309-b621-bf83fa115572",
       "comment": "",
