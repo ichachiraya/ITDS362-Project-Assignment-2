@@ -568,9 +568,36 @@
     }, {
       "id": "7b58a0b6-bda3-4383-86b5-15cf1a9627d5",
       "comment": "",
-      "command": "click",
+      "command": "mouseOver",
       "target": "xpath=//a[contains(.,'Cart (1)')]",
+      "targets": [
+        ["linkText=Cart (1)", "linkText"],
+        ["css=#headlessui-popover-button-_r_6_ > .hover\\3Atext-ui-fg-base", "css:finder"],
+        ["xpath=//a[contains(text(),'Cart (1)')]", "xpath:link"],
+        ["xpath=//button[@id='headlessui-popover-button-_r_6_']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gb/cart')]", "xpath:href"],
+        ["xpath=//button/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cart (1)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2777916-ddda-45f7-a2ce-70328332be93",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "xpath=//button[contains(.,'Go to cart')]",
       "targets": [],
+      "value": ""
+    }, {
+      "id": "aa252450-ae6b-4f04-ba89-19788ccc3aba",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Go to cart')]",
+      "targets": [
+        ["css=.txt-compact-medium-plus", "css:finder"],
+        ["xpath=//div[@id='headlessui-popover-panel-_r_8_']/div[3]/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Go to cart')]", "xpath:innerText"]
+      ],
       "value": ""
     }, {
       "id": "b5eaf5e6-965b-468e-a749-40f63a60801a",
@@ -633,7 +660,7 @@
         ["xpath=//input[@id='promotion-input']", "xpath:attributes"],
         ["xpath=//input", "xpath:position"]
       ],
-      "value": "SAVE10"
+      "value": "AA"
     }, {
       "id": "19d2d937-cb60-4616-848e-3a6c1eb630d2",
       "comment": "",
@@ -975,6 +1002,27 @@
         ["xpath=//div[4]/button", "xpath:position"],
         ["xpath=//button[contains(.,'Place order')]", "xpath:innerText"]
       ],
+      "value": ""
+    }, {
+      "id": "023d6e4d-5b9e-4c03-81da-e9cc3ee2fba9",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebcfb4ad-20da-4ea7-8b7b-89b051c26d00",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31155874-cd67-4c25-a287-beb3d5feec92",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
       "value": ""
     }]
   }],
